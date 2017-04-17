@@ -1,0 +1,33 @@
+** clojure-sqlite-example
+
+Simple Clojure/SQLite3 example build from the idea of these two projects.
+
+- JDBC/Clojure code are based on  [[https://github.com/ogrim/clojure-sqlite-example][ogrim/clojure-sqlite-example]]
+- Sample data from  [[https://github.com/reindexio/graphql-nodejs-newsfeed][reindexio/graphql-nodejs-newsfeed]]
+- Some codes are also from [[https://github.com/xsc/ritual][xsc/ritual]]
+
+*** Setup database
+
+To load the database from the given DDL file manually try
+
+#+BEGIN_SRC sh
+sqlite3 db/db.sqlite3 < createdb.sql
+#+END_SRC
+
+*** Basic Usage
+
+#+BEGIN_SRC sh
+lein run
+#+END_SRC
+
+Example interaction is in [[src/clojure_sqlite_example/core.clj][core.clj]]
+
+*** Useful Links
+- http://clojure-doc.org/articles/ecosystem/java_jdbc/home.html
+- http://clojure-doc.org/articles/ecosystem/java_jdbc/using_ddl.html
+- http://clojure-doc.org/articles/ecosystem/java_jdbc/using_sql.html
+** License
+
+Copyright (C) 2017 Burin Choomnuan
+
+Distributed under the Eclipse Public License, the same as Clojure.
